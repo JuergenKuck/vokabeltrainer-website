@@ -33,6 +33,21 @@ body {
     text-align: center;
 }
 
+.hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #dbeafe;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
 .hero-app-icon {
     width: 88px;
     height: 88px;
@@ -60,10 +75,16 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 15px;
+    font-size: 16px;
     color: #DDD8FF;
     line-height: 1.55;
     margin-bottom: 28px;
+}
+
+.hero-note {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #bfdbfe;
 }
 
 .badge-row {
@@ -133,6 +154,11 @@ body {
     border-radius: 16px;
     padding: 18px;
     margin-bottom: 12px;
+}
+
+.card-emphasis {
+    border-color: rgba(103, 232, 249, 0.42);
+    box-shadow: 0 6px 30px rgba(8, 145, 178, 0.18);
 }
 
 .card-header {
@@ -226,6 +252,50 @@ body {
     color: #FFD700;
 }
 
+.dot-red {
+    background: rgba(248, 113, 113, 0.18);
+    color: #fca5a5;
+}
+
+.steps-list .feature-dot {
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.comparison-card {
+    background: #0C1A31;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.comparison-card-negative {
+    border: 1px solid rgba(248, 113, 113, 0.24);
+    background: linear-gradient(180deg, rgba(127, 29, 29, 0.18) 0%, rgba(12, 26, 49, 1) 100%);
+}
+
+.comparison-card-positive {
+    border: 1px solid rgba(134, 239, 172, 0.24);
+    background: linear-gradient(180deg, rgba(20, 83, 45, 0.18) 0%, rgba(12, 26, 49, 1) 100%);
+}
+
+.comparison-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.comparison-list li {
+    font-size: 13px;
+}
+
 /* ── Privacy triple ── */
 .privacy-grid {
     display: grid;
@@ -252,6 +322,23 @@ body {
     font-weight: 600;
     color: #a89fff;
     line-height: 1.3;
+}
+
+.offline-places {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.place-chip {
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: rgba(6, 182, 212, 0.12);
+    border: 1px solid rgba(103, 232, 249, 0.24);
+    color: #a5f3fc;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 /* ── Direction cards ── */
@@ -387,6 +474,11 @@ body {
     padding-bottom: 12px;
 }
 
+.shot-card {
+    flex-shrink: 0;
+    width: fit-content;
+}
+
 .screenshot-row img {
     height: 320px;
     width: auto;
@@ -397,6 +489,14 @@ body {
     cursor: pointer;
 }
 
+.shot-caption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #e2e8f0;
+}
+
 /* ── Divider ── */
 .section-label {
     font-size: 11px;
@@ -405,6 +505,12 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 24px 0 10px;
+}
+
+.section-note {
+    margin: -2px 0 18px;
+    font-size: 12px;
+    color: #94a3b8;
 }
 
 /* ── Footer ── */
@@ -422,6 +528,34 @@ body {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+.cta-panel {
+    margin-top: 18px;
+    background: linear-gradient(180deg, rgba(12, 26, 49, 0.96) 0%, rgba(15, 23, 42, 0.98) 100%);
+    border: 1px solid rgba(103, 232, 249, 0.28);
+    border-radius: 18px;
+    padding: 22px 18px;
+    text-align: center;
+}
+
+.cta-panel-title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.cta-panel-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 18px;
+}
+
+.cta-btn-secondary {
+    background: #081120;
 }
 
 /* ── Lightbox ── */
@@ -451,4 +585,18 @@ body {
     max-height: 85vh;
     border-radius: 18px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 420px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 25px;
+    }
+
+    .screenshot-row img {
+        height: 300px;
+    }
 }
