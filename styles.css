@@ -66,12 +66,12 @@ body {
 }
 
 .hero-title {
-    font-size: 28px;
+    font-size: 31px;
     font-weight: 800;
     color: #FFFFFF;
     line-height: 1.2;
     margin-bottom: 10px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.8px;
 }
 
 .hero-subtitle {
@@ -84,7 +84,8 @@ body {
 .hero-note {
     margin-top: 14px;
     font-size: 13px;
-    color: #bfdbfe;
+    color: #e0f2fe;
+    font-weight: 700;
 }
 
 .badge-row {
@@ -159,6 +160,20 @@ body {
 .card-emphasis {
     border-color: rgba(103, 232, 249, 0.42);
     box-shadow: 0 6px 30px rgba(8, 145, 178, 0.18);
+}
+
+.privacy-lead {
+    font-size: 18px;
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 1.35;
+}
+
+.privacy-closing {
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #dbeafe;
 }
 
 .card-header {
@@ -508,7 +523,7 @@ body {
 }
 
 .section-note {
-    margin: -2px 0 18px;
+    margin: 10px 0 0;
     font-size: 12px;
     color: #94a3b8;
 }
@@ -593,7 +608,7 @@ body {
     }
 
     .hero-title {
-        font-size: 25px;
+        font-size: 27px;
     }
 
     .screenshot-row img {
