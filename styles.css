@@ -162,8 +162,14 @@ body {
     box-shadow: 0 6px 30px rgba(8, 145, 178, 0.18);
 }
 
+.card-identity {
+    padding: 22px 20px;
+    background: linear-gradient(180deg, rgba(8, 47, 73, 0.92) 0%, rgba(12, 26, 49, 0.98) 100%);
+    border-width: 1.5px;
+}
+
 .privacy-lead {
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 800;
     color: #FFFFFF;
     line-height: 1.35;
@@ -309,6 +315,22 @@ body {
 
 .comparison-list li {
     font-size: 13px;
+}
+
+.trust-note {
+    margin: 0 0 14px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #dbeafe;
+}
+
+.trust-note-title {
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #FFFFFF;
 }
 
 /* ── Privacy triple ── */
